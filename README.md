@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a test application to test the issue **Use :bigint for SQLite on references** on Ruby on Rails.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See `db/schema.rb` to see how SQLite uses `:bigint` on table `active_storage_blobs` while it uses `:integer` for references at `post_id` on table `comments`
